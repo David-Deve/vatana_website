@@ -2,18 +2,15 @@
   <nav class="site-nav">
     <div class="container">
       <div class="site-navigation">
-        <a
-          href="index.html"
-          class="logo m-0 float-start"
-          style="text-decoration: none"
+        <a href="/" class="logo m-0 float-start" style="text-decoration: none"
           >TITH VATANA<span class="text-primary">.</span>
         </a>
         <ul
           class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-start"
         >
-          <li><a href="index.html">Home</a></li>
-          <li><a href="project.html">Projects</a></li>
-          <li><a href="services.html">Services</a></li>
+          <li><a href="/">Home</a></li>
+          <li><a href="/project">Projects</a></li>
+          <li><a href="/services">Services</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact Us</a></li>
         </ul>
