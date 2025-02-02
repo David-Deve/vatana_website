@@ -10,7 +10,7 @@
   <navbar />
   <div
     class="hero-2 overlay"
-    style="background-image: url('/src/assets/images/img_3.jpg')"
+    style="background-image: url('img_3.jpg')"
   >
     <div class="container">
       <div class="row align-items-center">
