@@ -1,5 +1,4 @@
 import { createApp } from "vue";
-import { createPinia } from "pinia";
 import { createI18n } from "vue-i18n";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap.js";
@@ -7,7 +6,10 @@ import App from "./App.vue";
 import router from "./router";
 import { loadMessage } from "./lang";
 import "boxicons/css/boxicons.min.css";
-
+// import "../src/assets/js/aos";
+// import "../src/assets/js/counter";
+// import "../src/assets/js/custom";
+// import "../src/assets/js/tiny-slider";
 const app = createApp(App);
 loadMessage().then((messages) => {
   const i18n = createI18n({
