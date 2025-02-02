@@ -17,12 +17,8 @@ loadMessage().then((messages) => {
     warnHtmlMessage: false,
     legacy: false,
   });
-  app.use(createPinia());
   app.use(router);
   app.use(i18n);
   app.mount("#app");
 });
 
-app.use(createPinia());
-app.use(router);
-app.mount("#app");
