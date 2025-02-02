@@ -16,27 +16,17 @@
       <div class="row align-items-center">
         <div class="col-lg-5 mx-auto">
           <h1 class="mb-5">
-            <span>{{ $t("welove") }}</span>
-            <span class="d-block">{{ $t("architecture") }}</span>
-            <span class="d-block">{{ $t("interior_design") }}</span>
+            <span>{{ $t("HomePage.welove") }}</span>
+            <span class="d-block">{{ $t("HomePage.architecture") }}</span>
+            <span class="d-block">{{ $t("HomePage.interior_design") }}</span>
           </h1>
-
-          <div class="play-vid">
-            <a
-              href="https://www.youtube.com/watch?v=mwtbEGNABWU"
-              class="play glightbox"
-            >
-              <span class="icon-play"></span>
-            </a>
-          </div>
 
           <div class="intro-desc">
             <div class="line"></div>
-            <p>
-              Delectus voluptatum distinctio quos eius excepturi sunt pariatur,
-              aut, doloribus officia ea molestias beatae laudantium, quam odio
-              ipsum veritatis est maiores velit quasi blanditiis et natus
-              accusamus itaque.
+            <p
+              :style="({ fontFamily: fontFamily }, { letterSpacing: '0.05em' })"
+            >
+              {{ $t("title") }}
             </p>
           </div>
         </div>
@@ -48,19 +38,15 @@
     <div class="container">
       <div class="row g-0">
         <div class="col-lg-3">
-          <h2 class="heading">We create architectural designs</h2>
-          <p>
-            Delectus voluptatum distinctio quos eius excepturi sunt pariatur,
-            aut, doloribus officia ea molestias beatae laudantium, quam odio
-            ipsum veritatis est maiores velit quasi blanditiis et natus
-            accusamus itaque. Veniam quidem debitis odio amet voluptas
-            distinctio dicta placeat! Et pariatur doloremque ea veniam.
-          </p>
-
-          <p>
-            <a href="#" class="more-2"
-              >{{ $t("test") }} <span class="icon-arrow_forward"></span
-            ></a>
+          <h2 class="heading">{{ $t("HomePage.whyweneedarc") }}</h2>
+          <p
+            :style="{
+              fontFamily: fontFamily,
+              letterSpacing: ' 0.07em',
+              lineHeight: '1.5',
+            }"
+          >
+            {{ $t("HomePage.answer") }}
           </p>
         </div>
         <div class="col-lg-7 ms-auto">
@@ -85,18 +71,15 @@
           />
         </div>
         <div class="col-lg-3 ms-auto">
-          <h2 class="heading">Modern Architecture</h2>
-          <p>
-            Delectus voluptatum distinctio quos eius excepturi sunt pariatur,
-            aut, doloribus officia ea molestias beatae laudantium, quam odio
-            ipsum veritatis est maiores velit quasi blanditiis et natus
-            accusamus itaque. Veniam quidem debitis odio amet voluptas
-            distinctio dicta placeat! Et pariatur doloremque ea veniam.
-          </p>
-          <p>
-            <a href="#" class="more-2"
-              >Learn more <span class="icon-arrow_forward"></span
-            ></a>
+          <h2 class="heading">{{ $t("HomePage.modernarc") }}</h2>
+          <p
+            :style="{
+              fontFamily: fontFamily,
+              letterSpacing: ' 0.07em',
+              lineHeight: '1.5',
+            }"
+          >
+            {{ $t("HomePage.para") }}
           </p>
         </div>
       </div>
@@ -113,4 +96,6 @@ import Navbar from "@/components/navbar.vue";
 import Footer from "@/components/footer.vue";
 import founder from "@/components/founder.vue";
 import allproject from "@/components/allproject.vue";
+import { useFont } from "@/utils/usefont";
+const fontFamily = useFont();
 </script>

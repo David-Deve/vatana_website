@@ -7,12 +7,23 @@
         </a>
         <ul
           class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-start"
+          :style="{ fontFamily: fontFamily }"
         >
-          <li><a href="/">Home</a></li>
-          <li><a href="/project">Projects</a></li>
-          <li><a href="/services">Services</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
+          <li>
+            <a href="/">{{ $t("Navbar.home") }}</a>
+          </li>
+          <li>
+            <a href="/project">{{ $t("Navbar.project") }}</a>
+          </li>
+          <li>
+            <a href="/services">{{ $t("Navbar.service") }}</a>
+          </li>
+          <li>
+            <a href="about.html">{{ $t("Navbar.about") }}</a>
+          </li>
+          <li>
+            <a href="contact.html">{{ $t("Navbar.contact") }}</a>
+          </li>
         </ul>
 
         <a
@@ -48,14 +59,20 @@
 <script setup>
 import { ref, computed } from "vue";
 import { useI18n } from "vue-i18n";
+import { useFont } from "@/utils/usefont";
 const { locale } = useI18n();
 const checkLang = computed(() => locale.value === "en");
 function changeLanguage() {
   locale.value = checkLang.value ? "kh" : "en";
 }
+
+const fontFamily = useFont();
 </script>
 <style scoped>
 .logo {
   font-family: "Montserrat", sans-serif;
+}
+.a {
+  text-decoration: none;
 }
 </style>

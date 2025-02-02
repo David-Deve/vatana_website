@@ -5,11 +5,11 @@
 
 			<div class="row justify-content-between">
 				<div class="col-lg-4">
-					<div class="widget">
+					<!-- <div class="widget">
 						<h3 class="line-top">About</h3>
 						<p class="mb-5">Delectus voluptatum distinctio quos eius excepturi sunt pariatur, aut, doloribus officia ea molestias beatae laudantium, quam odio ipsum veritatis est maiores velit quasi blanditiis et natus accusamus itaque. Veniam quidem debitis odio amet voluptas distinctio dicta placeat! Et pariatur doloremque ea veniam. Separated they live.</p>
 
-					</div>
+					</div> -->
 					<div class="widget">
 						<h3 class="line-top">Connect with us</h3>
 						<ul class="social list-unstyled mb-5">
@@ -22,7 +22,7 @@
 						</ul>
 					</div>
 				</div>
-				<div class="col-lg-6">
+				<!-- <div class="col-lg-6">
 					<div class="row">
 						<div class="col-12">
 							<div class="widget">
@@ -63,12 +63,12 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> -->
 			</div>
 
 			<div class="row justify-content-center text-center copyright">
 				<div class="col-md-8">
-					<p class="small text-black-50">Copyright &copy. All Rights Reserved. Designed with love by <a href="https://untree.co">Untree.co</a></br>Distributed By <a href="https://themewagon.com/">Themewagon</a> <!-- License information: https://untree.co/license/ -->
+					<p class="small text-black-50">Copyright &copy. All Rights Reserved. Designed with love by <a href="https://untree.co">E David</a> </br>, Powered By <a href="https://themewagon.com/">Vue3 Js</a> <!-- License information: https://untree.co/license/ -->
 					</p>
 				</div>
 			</div>

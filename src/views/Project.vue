@@ -10,28 +10,27 @@
   <navbar />
   <div
     class="hero-2 overlay"
-    style="background-image: url('/src/assets/images/img_2.jpg')"
+    style="background-image: url('/src/assets/images/img_3.jpg')"
   >
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-5 mx-auto">
-          <h1 class="mb-5 text-center"><span>Our Projects</span></h1>
+          <h1 class="mb-5 text-center">
+            <span>{{ $t("Project.ourproject") }}</span>
+          </h1>
 
           <div class="intro-desc text-left">
             <div class="line"></div>
             <p>
-              Delectus voluptatum distinctio quos eius excepturi sunt pariatur,
-              aut, doloribus officia ea molestias beatae laudantium, quam odio
-              ipsum veritatis est maiores velit quasi blanditiis et natus
-              accusamus itaque.
+              {{ $t("title") }}
             </p>
           </div>
         </div>
       </div>
     </div>
   </div>
-
-  <div class="section sec-5">
+  <allproject />
+  <!-- <div class="section sec-5">
     <div class="container">
       <div class="row mb-5">
         <div class="col-lg-6 ms-auto">
@@ -138,28 +137,30 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <div class="section">
     <div class="container">
       <div class="row border-bottom mb-5 pb-5 justify-content-between">
         <div class="col-lg-4 align-self-center mb-5">
-          <span class="d-block subheading mb-3">We are committed</span>
-          <h2 class="heading mb-4">
-            The road of success is always under construction
+          <span class="d-block subheading mb-3">{{
+            $t("Project.commit")
+          }}</span>
+          <h2 class="heading mb-4" style="line-height: 1.8">
+            {{ $t("Project.quote") }}
           </h2>
-          <p>
-            A small river named Duden flows by their place and supplies it with
-            the necessary regelialia. It is a paradisematic country, in which
-            roasted parts of sentences fly into your mouth.
+          <p
+            :style="{
+              fontFamily: fontFamily,
+              letterSpacing: ' 0.07em',
+              lineHeight: '1.5',
+            }"
+          >
+            {{ $t("Project.para") }}
           </p>
         </div>
         <div class="col-lg-7">
-          <a
-            href="https://www.youtube.com/watch?v=mwtbEGNABWU"
-            class="video-wrap glightbox"
-          >
-            <span class="icon-play"></span>
+          <a href="" class="video-wrap glightbox">
             <img
               src="/src/assets/images/img_2.jpg"
               alt="Image"
@@ -236,4 +237,7 @@
 import navbar from "@/components/navbar.vue";
 import Footer from "@/components/footer.vue";
 import founder from "@/components/founder.vue";
+import allproject from "@/components/allproject.vue";
+import { useFont } from "@/utils/usefont";
+const fontFamily = useFont();
 </script>

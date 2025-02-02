@@ -1,7 +1,7 @@
 <template>
   <div class="sec-4 section bg-light">
     <div class="text-center mb-5">
-      <h2 class="heading mb-5 text-center">FOUNDER</h2>
+      <h2 class="heading mb-5 text-center">{{ $t("Founder.founder") }}</h2>
     </div>
 
     <div class="horizontal-card container">
@@ -13,12 +13,8 @@
         />
       </div>
       <div class="card-body">
-        <h2>TITH VATANA</h2>
-        <h4>Architect Project Management</h4>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit omnis
-          tenetur eveniet soluta numquam deleniti sequi dolore nostrum sit.
-        </p>
+        <h2>{{ $t("Founder.name") }}</h2>
+        <h4>{{ $t("Founder.position") }}</h4>
       </div>
       <!-- <div class="card-footer">
         <button class="contact-btn">
@@ -26,15 +22,25 @@
         </button>
       </div> -->
       <div class="col text-center">
-        <p>
+        <p
+          :style="{
+            fontFamily: fontFamily,
+            letterSpacing: ' 0.07em',
+            lineHeight: '1.5',
+          }"
+        >
           <a href="#" class="btn btn-primary"
-            >Contact Me <br /><i class="bx bxl-telegram"></i
+            >{{ $t("Founder.contact") }}<br /><i class="bx bxl-telegram"></i
           ></a>
         </p>
       </div>
     </div>
   </div>
 </template>
+<script setup>
+import { useFont } from "@/utils/usefont";
+const fontFamily = useFont();
+</script>
 <style scoped>
 /* General Styles */
 

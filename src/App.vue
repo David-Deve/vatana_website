@@ -30,7 +30,7 @@ watch(currentLanguage, (newLang) => {
 }
 
 .khmer-font {
-  font-family: "Angkor", serif;
+  font-family: "Angkor", "Noto Serif Khmer", serif;
 }
 .dark-theme {
   background-color: #121212;
