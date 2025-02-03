@@ -2,28 +2,45 @@
   <nav class="site-nav">
     <div class="container">
       <div class="site-navigation">
-        <a href="/" class="logo m-0 float-start" style="text-decoration: none; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"
+        <a
+          href="/"
+          class="logo m-0 float-start"
+          style="
+            text-decoration: none;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+              sans-serif;
+          "
           >TITH VATANA<span class="text-primary">.</span>
         </a>
-        
-        <!-- Desktop Menu -->
-        <ul class="js-clone-nav d-none d-lg-flex site-menu" :style="{ fontFamily: fontFamily }">
-          <li><a href="/">{{ $t("Navbar.home") }}</a></li>
-          <li><a href="/project">{{ $t("Navbar.project") }}</a></li>
-          <li><a href="/services">{{ $t("Navbar.service") }}</a></li>
-          <li><a href="about.html">{{ $t("Navbar.about") }}</a></li>
-          <li><a href="contact.html">{{ $t("Navbar.contact") }}</a></li>
 
+        <!-- Desktop Menu -->
+        <ul
+          class="js-clone-nav d-none d-lg-flex site-menu"
+          :style="{ fontFamily: fontFamily }"
+        >
+          <li>
+            <a href="/">{{ $t("Navbar.home") }}</a>
+          </li>
+          <li>
+            <a href="/project">{{ $t("Navbar.project") }}</a>
+          </li>
+          <li>
+            <a href="/services">{{ $t("Navbar.service") }}</a>
+          </li>
+          <li>
+            <a href="about.html">{{ $t("Navbar.about") }}</a>
+          </li>
+          <li>
+            <a href="contact.html">{{ $t("Navbar.contact") }}</a>
+          </li>
         </ul>
         <button class="btn ms-0" @click="changeLanguage">
           <img v-if="checkLang" src="../assets/svg/km.svg" width="25" />
           <img v-else src="../assets/svg/en.svg" width="25" />
         </button>
         <!-- Mobile Menu Button -->
-        
 
         <!-- Language Button -->
-        
 
         <button class="burger d-lg-none" @click="toggleMenu">
           <span></span>
@@ -35,11 +52,21 @@
         <div class="sidebar" :class="{ open: isMenuOpen }">
           <button class="close-btn" @click="toggleMenu">✕</button>
           <ul class="mobile-menu">
-            <li @click="toggleMenu"><a href="/">{{ $t("Navbar.home") }}</a></li>
-            <li @click="toggleMenu"><a href="/project">{{ $t("Navbar.project") }}</a></li>
-            <li @click="toggleMenu"><a href="/services">{{ $t("Navbar.service") }}</a></li>
-            <li @click="toggleMenu"><a href="about.html">{{ $t("Navbar.about") }}</a></li>
-            <li @click="toggleMenu"><a href="contact.html">{{ $t("Navbar.contact") }}</a></li>
+            <li @click="toggleMenu">
+              <a href="/">{{ $t("Navbar.home") }}</a>
+            </li>
+            <li @click="toggleMenu">
+              <a href="/project">{{ $t("Navbar.project") }}</a>
+            </li>
+            <li @click="toggleMenu">
+              <a href="/services">{{ $t("Navbar.service") }}</a>
+            </li>
+            <li @click="toggleMenu">
+              <a href="about.html">{{ $t("Navbar.about") }}</a>
+            </li>
+            <li @click="toggleMenu">
+              <a href="contact.html">{{ $t("Navbar.contact") }}</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -104,7 +131,7 @@ function toggleMenu() {
   display: block;
   width: 25px;
   height: 3px;
-  background: #333;
+  background: #000000;
   border-radius: 2px;
   transition: 0.3s;
 }

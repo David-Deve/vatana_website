@@ -7,7 +7,14 @@
     <div class="horizontal-card container">
       <div class="card-header">
         <img
-          src="/src//assets/images/img_2.jpg"
+          src="/src/assets/images/founder.jpg"
+          style="
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            object-position: bottom;
+            image-rendering: -webkit-optimize-contrast;
+          "
           alt="Profile Picture"
           class="profile-img"
         />
@@ -29,7 +36,7 @@
             lineHeight: '1.5',
           }"
         >
-          <a href="#" class="btn btn-primary"
+          <a href="https://t.me/tithvathana" class="btn btn-primary"
             >{{ $t("Founder.contact") }}<br /><i class="bx bxl-telegram"></i
           ></a>
         </p>

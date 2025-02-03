@@ -68,7 +68,7 @@
 
 			<div class="row justify-content-center text-center copyright">
 				<div class="col-md-8">
-					<p class="small text-black-50">Copyright &copy. All Rights Reserved. Designed with love by <a href="https://untree.co">E David</a> </br>, Powered By <a href="https://themewagon.com/">Vue3 Js</a> <!-- License information: https://untree.co/license/ -->
+					<p class="small text-black-50">Copyright &copy. All Rights Reserved. Designed with love by <a href="https://t.me/DavidGK13">E David</a> </br>, Powered By <a href="https://vuejs.org/">Vue3 Js</a> <!-- License information: https://untree.co/license/ -->
 					</p>
 				</div>
 			</div>
