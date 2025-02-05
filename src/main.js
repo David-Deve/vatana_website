@@ -10,6 +10,8 @@ import "boxicons/css/boxicons.min.css";
 // import "../src/assets/js/counter";
 // import "../src/assets/js/custom";
 // import "../src/assets/js/tiny-slider";
+import ElementPlus from "element-plus";
+import "element-plus/dist/index.css";
 const app = createApp(App);
 loadMessage().then((messages) => {
   const i18n = createI18n({
@@ -22,5 +24,6 @@ loadMessage().then((messages) => {
   app.use(router);
   app.use(i18n);
   app.mount("#app");
+  app.use(ElementPlus);
 });
 

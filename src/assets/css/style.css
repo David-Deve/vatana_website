@@ -12177,7 +12177,7 @@ a {
 }
 
 .sec-3 .heading {
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
   position: relative;
   text-transform: uppercase;
   font-size: 14px;
@@ -12188,7 +12188,7 @@ a {
 @media (max-width: 767.98px) {
   .sec-3 .heading {
     font-size: 24px;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
   }
 }
 .sec-3 .heading:before {

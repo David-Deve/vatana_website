@@ -34,12 +34,19 @@
     <div class="container">
       <div class="row mb-5 justify-content-between">
         <div class="col-lg-6 mb-lg-0 mb-4">
-          <img
-            style="height: 500px"
-            src="/src/assets/images/Project/1-2.jpg"
-            alt="Image"
-            class="img-fluid"
-          />
+          <div class="block text-center">
+            <h2 class="demonstration">Project Picture</h2>
+            <el-carousel height="400px" motion-blur autoplay>
+              <el-carousel-item v-for="(img, index) in images" :key="index">
+                <img
+                  :src="img"
+                  alt="Image"
+                  class="img-fluid"
+                  style="height: 400px; width: 100%"
+                />
+              </el-carousel-item>
+            </el-carousel>
+          </div>
         </div>
         <div class="col-lg-5">
           <div class="heading">{{ $t("Project.dec") }}</div>
@@ -92,4 +99,9 @@ import founder from "@/components/founder.vue";
 import Footer from "@/components/footer.vue";
 import { useFont } from "@/utils/usefont";
 const fontFamily = useFont();
+import { ref } from "vue";
+const images = ref([
+  "/src/assets/images/Project/1-2.jpg",
+  "/src/assets/images/Project/1-1.png",
+]);
 </script>
