@@ -100,8 +100,5 @@ import Footer from "@/components/footer.vue";
 import { useFont } from "@/utils/usefont";
 const fontFamily = useFont();
 import { ref } from "vue";
-const images = ref([
-  "/src/assets/images/Project/1-2.jpg",
-  "/src/assets/images/Project/1-1.png",
-]);
+const images = ref(["1-2.jpg", "1-1.png"]);
 </script>
