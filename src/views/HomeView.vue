@@ -8,10 +8,7 @@
     <div class="site-mobile-menu-body"></div>
   </div>
   <Navbar />
-  <div
-    class="hero-2 overlay"
-    style="background-image: url('img_2.jpg')"
-  >
+  <div class="hero-2 overlay" style="background-image: url('img_2.jpg')">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-5 mx-auto">

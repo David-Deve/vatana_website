@@ -7,6 +7,7 @@ import Project3 from "@/views/Project3.vue";
 import Project4 from "@/views/Project4.vue";
 import Project5 from "@/views/Project5.vue";
 import Project6 from "@/views/Project6.vue";
+import Aboutme from "@/views/Aboutme.vue";
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -49,6 +50,11 @@ const router = createRouter({
       path: "/project6",
       name: "project6",
       component: Project6,
+    },
+    {
+      path: "/aboutme",
+      name: "Aboutme",
+      component: Aboutme,
     },
   ],
   scrollBehavior(to, from, savedPosition) {

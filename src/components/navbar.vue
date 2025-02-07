@@ -25,13 +25,7 @@
             <a href="/project">{{ $t("Navbar.project") }}</a>
           </li>
           <li>
-            <a href="/services">{{ $t("Navbar.service") }}</a>
-          </li>
-          <li>
-            <a href="about.html">{{ $t("Navbar.about") }}</a>
-          </li>
-          <li>
-            <a href="contact.html">{{ $t("Navbar.contact") }}</a>
+            <a href="/aboutme">{{ $t("Navbar.about") }}</a>
           </li>
         </ul>
         <button class="btn ms-0" @click="changeLanguage">
@@ -59,13 +53,7 @@
               <a href="/project">{{ $t("Navbar.project") }}</a>
             </li>
             <li @click="toggleMenu">
-              <a href="/services">{{ $t("Navbar.service") }}</a>
-            </li>
-            <li @click="toggleMenu">
-              <a href="about.html">{{ $t("Navbar.about") }}</a>
-            </li>
-            <li @click="toggleMenu">
-              <a href="contact.html">{{ $t("Navbar.contact") }}</a>
+              <a href="/aboutme">{{ $t("Navbar.about") }}</a>
             </li>
           </ul>
         </div>
