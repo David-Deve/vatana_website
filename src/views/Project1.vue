@@ -35,7 +35,6 @@
       <div class="row mb-5 justify-content-between">
         <div class="col-lg-6 mb-lg-0 mb-4">
           <div class="block text-center">
-            <h2 class="demonstration">Project Picture</h2>
             <el-carousel height="400px" motion-blur autoplay>
               <el-carousel-item v-for="(img, index) in images" :key="index">
                 <img
@@ -87,7 +86,6 @@
       </div>
     </div>
   </div>
-
   <allproject />
   <founder />
   <Footer />
@@ -100,5 +98,12 @@ import Footer from "@/components/footer.vue";
 import { useFont } from "@/utils/usefont";
 const fontFamily = useFont();
 import { ref } from "vue";
-const images = ref(["1-2.jpg", "1-1.png"]);
+const images = ref([
+  "assets/project1_pic/1.png",
+  "assets/project1_pic/2.jpg",
+  "assets/project1_pic/3.jpg",
+  "assets/project1_pic/4.jpg",
+  "assets/project1_pic/5.jpg",
+  "assets/project1_pic/6.png",
+]);
 </script>

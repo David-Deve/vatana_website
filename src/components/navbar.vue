@@ -10,7 +10,7 @@
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
               sans-serif;
           "
-          >TITH VATANA<span class="text-primary">.</span>
+          >TITH VATHANA<span class="text-primary">.</span>
         </a>
 
         <!-- Desktop Menu -->
